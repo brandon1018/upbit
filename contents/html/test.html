@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<link type="text/css" rel="stylesheet" href="../css/test.css" />
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link
+	href="https://fonts.googleapis.com/css2?family=Black+Han+Sans&family=Do+Hyeon&display=swap"
+	rel="stylesheet">
+<script type="text/javascript" src="../jquery-3.4.1.js"></script>
+<script type="text/javascript" src="../js/test.js"></script>
+<title>Insert title here</title>
+</head>
+<body>
+	<input id="addCoinInput" type="text" placeholder="ex) ETH, XRP, ..."></input>
+	<button id="addCoinBtn">코인추가</button>
+	<button id="showCoinList">코인목록</button>
+	<button id="refreshBtn">새로고침</button>
+	<div id="coinTable">
+		<table class="coinList">
+			<thead>
+				<tr>
+					<td colspan="2">BTC</td>
+				</tr>
+			</thead>
+			<tr>
+				<td>현재가격</td>
+				<td class="currentPrice"><span id="currentBTC"></span>
+					<div>
+						<span id="changePriceBTC"></span><span id="changeRateBTC"></span>
+					</div></td>
+			</tr>
+		</table>
+	</div>
+	<div id="KRWCoinListDiv" style="display: none; margin-top: 15px;">
+		<div class="KRWCoinList" id="KRWCoinList1"></div>
+		<div class="KRWCoinList" id="KRWCoinList2"></div>
+		<div class="KRWCoinList" id="KRWCoinList3"></div>
+	</div>
+</body>
+</html>
